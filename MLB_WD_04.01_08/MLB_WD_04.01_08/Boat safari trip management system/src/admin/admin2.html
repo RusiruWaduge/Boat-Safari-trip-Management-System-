@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <!-- add a title (a) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Admin Page</title>
+      <script src="admin.js"></script>
+	    <link rel = "stylesheet" href="admin2.css">
+</head>
+<body>
+  <div class = "position">
+<div class="header">
+  <img src = "logo1.png">
+</div>
+
+<nav>
+  <div class = "logo">
+    <p>HIKKA SAFARISEAS</p>
+  </div>
+</nav>
+</div>
+
+  <!-- add a header (c)-->
+  <header>
+      <!-- add a horizontal line (d)-->
+      <!-- add a horizontal menu (e) -->
+  <div class="bar">
+          <div class="headbtn">
+                <a  id="button" href= "admin2.html">Dashboard</a></li>
+                <a id="button" href= "display_user.php">User Account</a></li>
+                <a id="button" href= "Feedback1.html">Feedback</a></li>
+          </div>
+      </div>		
+  <br>
+    
+		<br>
+        <h2 class="p1">My Account</h2>
+		    <h2 class="p2">Profile Picture</h2><br>
+        <img src="profile pic-modified.jpg" id="profile-pic">
+        <h3 class="p4">Change Your Profile Picture<h3> 
+        <h4 class="p5">A picture helps people recognize you and lets you know when you are signed in to your account</h4>      
+
+        <div id="spects">
+            <label for="input-file" id="btn1"><b>Change Profile Picture</b></label>     
+        </div>
+
+        <h4 class="p6">Maximum image size is 1 MB</h4>
+
+        <div class="form">
+            <h2 class="p7">Account Information</h2><br><br>
+            <form>
+              <label for="fname">First name :</label>
+              <input type="text" id="name" placeholder="Enter First Name" name="fname"><br><br>
+              <label for="lname">Last name :</label>
+              <input type="text" id="name" placeholder="Enter Last Name" name="lname"><br><br>
+              <label for="mail">Email :</label>
+              <input type="text" id="name" placeholder="Enter Your Email Address" name="mail"><br><br>
+              <label for="Pnumber">Phone Number :</label>
+              <input type="text" id="name" placeholder="Mobile Number(e.g.0714455666)" name="lname"><br><br>
+              <label for="Address">Address :</label>
+              <input type="text" id="Aname" placeholder="Enter Your Address" name="Address"><br><br>
+              
+            </form>
+            <h2 class="p9">Password : </h2>
+            <div id="spects">
+              <button id="btn2" type="button" onclick="loadData('btn1')"><b>Change Password</b></button>
+          </div>          
+          <div id="spects">
+              <button id="btn3" type="button" onclick="loadData('btn1')"><b>Save Changes</b></button>
+              <a href="Logout.php"><button id="btn4" type="button" onclick="loadData('btn1')"><b>Logout</b></button></a>     
+          </div>
+        
+          <div id="spects">
+              <button id="btn5" type="button" onclick="loadData('btn1')"><b>Delete Account</b></button> 
+          </div>
+        </div>
+      </div>
+  
+
+        <!-- add a footer (g)-->
+    
+        <hr class="new1">
+ 
+        
+    <br>
+    <footer class="footer">
+<div class = "container">
+<div class = "footer-content">
+  <h3> Contact Us </h3>
+  <p> E-mail: hikkaSafariseas@gmail.com </p>
+  <p> Phone: +94-7743357800</p>
+  <p> Address: 159/6 Hikkaduwa, Sri Lanka </p>
+</div>
+<div class = "footer-content">
+  <h3> Quick Links </h3>
+    <ul class = "list">
+      <li><a href = "#">HOME</a></li>
+      <li><a href = "#">ABOUT</a></li>
+      <li><a href = "#">SERVICES</a></li>
+      <li><a href = "#">CONTACT</a></li>
+    </ul>
+</div>
+<div class = "footer-content">
+  <h3> Follow Us </h3>
+  <ul class = "social-icons">
+    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" ></a></li>
+            <li><a href="https://twitter.com/"><img src="twitter.png" alt="Twitter" ></a></li>
+            <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram" ></a></li>
+            <li><a href="https://www.google.com/"><img src="Google.jpg" alt="Google" ></a></li>
+  </ul>
+</div>
+</div>	
+    
+    </footer>
+    </html>
+	</body>
+</html>

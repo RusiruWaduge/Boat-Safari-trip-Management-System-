@@ -1,0 +1,411 @@
+body{
+  margin:0;
+  width: 100%;
+  padding:0px;
+  font-family: 'popping',sans-serif;
+  color: #ffffff;
+  background-image: url("imgback10.png");
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*background image*/
+.background img{
+	background-repeat: no-repeat;
+	background-attachment: scroll;  
+	background-size: cover;
+	width: 100%;
+	background-color: #cccccc;
+	background-position: center;
+}
+
+/*making header and nav bar fixed*/
+.position{
+	width: 100%;
+	position: fixed;
+}
+
+/*header*/
+.header {
+  height: 90px;
+  text-align: center;
+  background: #8ab9f1 ;
+}
+
+/*logo in header*/
+.header img{
+  position: center;
+  height: 80px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+/*style navigation bar*/
+nav{
+	height: 70px;
+	background-color: #242124;
+	line-height: 70px;
+	padding: 0px;
+}
+
+/*text logo in navigation bar*/
+nav .logo{
+	font-size: 23px;
+	font-family: Marker Felt, fantasy;
+	letter-spacing: 1.5px;
+}
+
+nav .logo p{
+	float: left;
+	color: white;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0 0 0 500px;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-family: Georgia, serif;
+}
+
+nav ul li a:hover{
+	background-color: #dcdcdc ;
+	color: black;
+}
+
+nav ul li a.active{
+	background-color: #4166f5;
+	color: white;
+}
+
+/*register and login buttons in navigation bar*/
+.navbtn button a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.navbtn button{
+	background-color: #4166f5; 
+	border-radius: 8px;
+	border: none;
+	margin-top: 17px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 0px;
+	padding: 8px 8px;
+	width: 100px;
+	float: right;
+}	
+
+.bar
+{
+  width: 100%;
+  position:absolute;
+  background-color: rgba(0, 0, 0, 0.616);
+  margin-top: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
+}
+
+.bar a.active {
+  background-color: #004f8f;
+  color: white;
+}
+
+.bar a:hover{
+  background-color: #30edf4;
+  transition: 0.5s;
+}
+
+.headbtn
+{
+  display: flex;
+  position: relative;
+  justify-content:center ; 
+  width: 100%;
+  gap: 72px;
+  
+}
+
+#button
+{
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+  position: relative;
+  font-family: fantasy;
+  color: white;
+  font-size: 1.5em;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Admin text */
+.p3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 20px;
+  margin-right: 6px;
+}
+
+/*Search button */
+
+.find
+{
+  background-color: #030346;
+  position: absolute;
+  width: 100%;
+}
+
+.find img
+{
+  width:110px
+}
+
+.find input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 30px;
+  margin-right: 100px;
+  border: none;
+  font-size: 17px;
+  border: 2px solid black;
+  width: 30%;
+  position: relative;
+}
+
+.find .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.find .search-container button:hover {
+  background: #ccc;
+}
+
+.logo
+{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Profile pic */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: block;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 6px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.avatar:hover
+{
+  transform: scale(1.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+hr.new1
+{  
+border: 2px solid rgb(54, 0, 180);
+border-radius: 5px;
+width: 100%;
+}
+
+.p1
+{
+font-size: 50px;
+text-align: center;
+margin-top: 220px;
+}
+
+.p2
+{
+  font-size: 25px;
+}
+
+#btn1 {
+background-color: red;
+padding: 15px 25px;
+font-size: 15px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+border: none;
+border-radius: 15px;
+float: right;
+margin-right: 30px;
+margin-top: 40px;
+}
+
+#btn1:active {
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+#btn3 {
+	background-color: rgb(9, 6, 204);
+	padding: 15px 25px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	border: none;
+	border-radius: 15px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 40px;
+	}
+	
+#btn3:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+#more
+{
+display: none;
+}
+
+.user
+{
+background-color: rgb(68, 68, 68);
+height: 100%;
+}
+
+table
+{
+justify-content: left;
+font-size: 20px;
+text-align: left;
+background-color: #1f1e1eb1;
+width: 100%;
+margin-left: 0px;
+width: 100%;
+}
+
+th, td
+{
+  padding-bottom: 30px;
+}
+
+
+
+
+/* Footer */
+.footer{
+	background: #000000;
+	left: 0;
+	bottom: 0;
+	margin-top: 0px;
+	width: 100%;}
+
+.container{
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-content{
+	width:  33.3%;
+	margin: 20px 20px 10px 20px;
+}
+
+h3{
+	font-size: 28px;
+	font-family: Georgia, serif;
+	margin-bottom: 15px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.footer-content p{
+	width: 190px;
+	margin: auto;
+	padding: 7px;
+	color: rgb(255, 255, 255);
+}
+
+.footer-content ul{
+	text-align: center;
+}
+
+.list{
+	padding: 10px;
+}
+
+.list li{
+	width: auto;
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+
+.list li a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+}
+
+/*social media icons in the footer*/
+.social-icons{
+	text-align: center;
+	padding: 0px;
+}
+
+.social-icons li{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	list-style: none;
+}
+
+.social-icons li a img{
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 20%;
+	width: 30px;
+}

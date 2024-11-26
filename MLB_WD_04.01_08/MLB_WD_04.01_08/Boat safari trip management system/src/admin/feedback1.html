@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Page</title>
+  <link rel="stylesheet" href="feedback1.css">
+
+
+</head>
+
+<body>
+  <hr class = "new1">
+  <div class = "position">
+<div class="header">
+  <img src = "logo1.png">
+</div>
+
+<nav>
+  <div class = "logo">
+    <p>hikka safariseas</p>
+  </div>
+</nav>
+</div>
+
+  <!-- add a header (c)-->
+  <header>
+      <!-- add a horizontal line (d)-->
+  <hr class = "new1">
+      <!-- add a horizontal menu (e) -->
+  <div class="bar">
+          <div class="headbtn">
+                <a  id="button" href= "admin2.html">Dashboard</a></li>
+                <a id="button" href= "display_user.php">User Account</a></li>
+                <a id="button" href= "Feedback1.html">Feedback</a></li>
+          </div>
+      </div>		
+  <br>
+
+    <h1 class="p1">User Feedbacks</h1>
+    <hr class="new1">
+
+    <table>
+      <tbody id="data-body"></tbody>
+    </table>
+
+    <hr class="new1">
+    <!-- add a footer (g)-->
+    <br>
+    <footer class="footer">
+<div class = "container">
+<div class = "footer-content">
+  <h3> Contact Us </h3>
+  <p> E-mail: hikkaSafariseas@gmail.com </p>
+  <p> Phone: +94-7743357800</p>
+  <p> Address: 159/6 Hikkaduwa, Sri Lanka </p>
+</div>
+<div class = "footer-content">
+  <h3> Quick Links </h3>
+    <ul class = "list">
+      <li><a href = "#">HOME</a></li>
+      <li><a href = "#">ABOUT</a></li>
+      <li><a href = "#">SERVICES</a></li>
+      <li><a href = "#">CONTACT</a></li>
+    </ul>
+</div>
+<div class = "footer-content">
+  <h3> Follow Us </h3>
+  <ul class = "social-icons">
+    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook" ></a></li>
+            <li><a href="https://twitter.com/"><img src="twitter.png" alt="Twitter" ></a></li>
+            <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram" ></a></li>
+            <li><a href="https://www.google.com/"><img src="Google.jpg" alt="Google" ></a></li>
+  </ul>
+</div>
+</div>	
+    
+     
+ </body>
+</html>
+    </footer>
+    <script>
+      // Fetch data from the PHP file
+      fetch('display_feedback.php')
+        .then(response => response.json())
+        .then(data => {
+          const dataBody = document.getElementById('data-body');
+          data.forEach(item => {
+            const row = document.createElement('tr');
+             row.innerHTML = `<img src="profile pic-modified.jpg" alt="Avatar" class="avatar2">
+              <h3 class="p4">${item.FeedbackID}<h3><br>
+              <h4 class="p5">${item.Comment}</h4>
+              <button id="btn1" type="button" onclick="loadData('btn1')"><b>Delete Feedback</b></button>
+              <button id="btn2" type="button" onclick="loadData('btn2')"><b>Approve</b></button>`;
+            dataBody.appendChild(row);
+          });
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    </script>
+</body>
+
+</html>
